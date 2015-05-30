@@ -7,4 +7,4 @@ npm install
 bower update
 grunt
 
-/usr/sbin/apache2 -D FOREGROUND
+sudo /usr/sbin/apache2 -D FOREGROUND
