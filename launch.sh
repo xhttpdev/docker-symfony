@@ -2,7 +2,7 @@
 
 composer install
 npm install
-bower update --allow-root
+bower update
 grunt
 
 chown -R www-data:www-data .

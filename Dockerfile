@@ -25,4 +25,6 @@ RUN mv composer.phar /usr/local/bin/composer
 
 WORKDIR /var/www/html
 
+USER www-data
+
 ADD launch.sh /launch
