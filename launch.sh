@@ -1,6 +1,8 @@
 #!/bin/bash -e
 
 composer install
+npm install
+bower update
 
 chown -R www-data:www-data .
 
