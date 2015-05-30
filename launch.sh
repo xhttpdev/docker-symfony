@@ -4,7 +4,7 @@ chown -R www-data:www-data .
 
 composer install
 npm install
-bower update
+bower update --allow-root
 grunt
 
-sudo /usr/sbin/apache2 -D FOREGROUND
+/usr/sbin/apache2 -D FOREGROUND
