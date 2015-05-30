@@ -16,6 +16,9 @@ RUN ln -s /nodejs/bin/node /usr/local/bin/
 # bower
 RUN npm install -g bower
 
+# grunt
+RUN npm install -g grunt-cli
+
 # composer
 RUN curl -sS https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer

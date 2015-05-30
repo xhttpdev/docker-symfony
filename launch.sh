@@ -3,6 +3,7 @@
 composer install
 npm install
 bower update
+grunt
 
 chown -R www-data:www-data .
 
