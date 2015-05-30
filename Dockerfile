@@ -10,7 +10,7 @@ WORKDIR /
 RUN mkdir /nodejs
 RUN curl -Lks http://nodejs.org/dist/v0.12.4/node-v0.12.4-linux-x64.tar.gz -o /nodejs.tar.gz
 RUN tar zxf /nodejs.tar.gz --strip=1 -C /nodejs
-RUN ln -s /nodejs//lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+RUN ln -s /nodejs/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
 RUN ln -s /nodejs/bin/node /usr/local/bin/
 
 # bower
