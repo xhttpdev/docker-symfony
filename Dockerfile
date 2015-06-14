@@ -6,6 +6,16 @@ RUN a2ensite 000-default
 
 WORKDIR /
 
+RUN apt-get -yqq update
+
+# ruby
+RUN DEBIAN_FRONTEND=noninteractive apt-get -yqq install ruby-full build-essential
+
+RUN apt-get autoclean
+
+# compass
+RUN gem install compass
+
 # npm
 RUN mkdir /nodejs
 RUN curl -Lks http://nodejs.org/dist/v0.12.4/node-v0.12.4-linux-x64.tar.gz -o /nodejs.tar.gz

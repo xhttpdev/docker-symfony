@@ -6,6 +6,8 @@ Includes:
 - npm
 - bower
 - grunt
+- ruby
+- compass
 
 ## Example configuration ##
 
