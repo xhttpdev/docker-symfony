@@ -1,4 +1,4 @@
-# docker-zend
+# docker-symfony
 Docker Image with Apache + PHP + Composer + Postfix
 
 Includes:
