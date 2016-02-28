@@ -1,8 +1,9 @@
-# Symfony ##
+# docker-zend
 Docker Image with Apache + PHP + Composer + Postfix
 
 Includes:
 - MongoDb extension
+- MySql extension
 - npm
 - bower
 - grunt
@@ -30,6 +31,17 @@ No Volume available
 
     app:
         image: xhttpdev/docker-symfony:latest
+        ports:
+            - "80:80"
+        environment:
+            docker_mail_domain: "mydomain.com"
+
+### OnBuild ###
+
+copies current directory to `/var/www/html` and owner is changed to `www-data`
+
+    app:
+        image: xhttpdev/docker-symfony:onbuild
         ports:
             - "80:80"
         environment:
